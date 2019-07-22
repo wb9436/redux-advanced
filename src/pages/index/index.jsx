@@ -6,33 +6,27 @@ import {add, minus, asyncAdd} from '../../reducers/counter/action'
 
 import './index.scss'
 
-
+// @connect(({counter}) => ({
+//   counter
+// }), (dispatch) => ({
+//   onAdd() {
+//     dispatch(add.apply(this, arguments))
+//   }
+// }))
 @connect(({counter}) => ({
   counter
-}), (dispatch) => ({
-  add() {
-    dispatch(add())
-  },
-  dec() {
-    dispatch(minus())
-  },
-  asyncAdd() {
-    dispatch(asyncAdd())
-  }
 }))
 class Index extends Component {
-
   config = {
     navigationBarTitleText: '首页'
   }
 
-  componentWillUnmount() {
-  }
-
-  componentDidShow() {
-  }
-
-  componentDidHide() {
+  onAdd(num) {
+    // this.props.onAdd(num)
+    this.props.dispatch({
+      type: 'ADD',
+      num: num
+    })
   }
 
   onTestPromise() {
@@ -57,7 +51,7 @@ class Index extends Component {
   render() {
     return (
       <View className='index'>
-        <Button className='add_btn' onClick={this.props.add}>+</Button>
+        <Button className='add_btn' onClick={this.onAdd.bind(this, 2)}>+</Button>
         <Button className='dec_btn' onClick={this.props.dec}>-</Button>
         <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
         <Button className='dec_btn' onClick={this.onTestPromise.bind(this)}>Test Promise</Button>

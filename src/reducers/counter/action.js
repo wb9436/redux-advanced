@@ -1,8 +1,9 @@
 import { ADD, MINUS } from './constant'
 
-export const add = () => {
+export const add = (num) => {
   return {
-    type: ADD
+    type: ADD,
+    num: num
   }
 }
 export const minus = () => {
