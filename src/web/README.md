@@ -1,74 +1,77 @@
-HTML
-DOCTYPE（文档类型）的作用是什么？
+#HTML
++ DOCTYPE（文档类型）的作用是什么？
 
-参考https://witcher42.github.io/2014/05/28/doctype/
+      参考https://witcher42.github.io/2014/05/28/doctype/
 
-浏览器标准模式 (standards mode) 、几乎标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？
++ 浏览器标准模式 (standards mode) 、几乎标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？
 
-产生的历史原因是啥？
-怪异模式有哪些怪异的行为？
-使用 data- 属性的好处是什么？
++ 产生的历史原因是啥？
 
-可以去实践下data-*的使用啦
++ 怪异模式有哪些怪异的行为？
 
-如果把 HTML5 看作做一个开放平台，那它的构建模块有哪些？
++ 使用 data- 属性的好处是什么？
+  
+      可以去实践下data-*的使用啦
 
-研究下HTML5的所有模块
++ 如果把 HTML5 看作做一个开放平台，那它的构建模块有哪些？
 
-cookies、sessionStorage 和 localStorage 的区别
++ 研究下HTML5的所有模块
 
-请解释 <script>、<script async> 和 <script defer> 的区别。
++ cookies、sessionStorage 和 localStorage 的区别
 
-为什么通常推荐将 CSS <link> 放置在 <head></head> 之间，而将 JS <script> 放置在 </body> 之前？你知道有哪些例外吗？
++ 请解释 <script>、<script async> 和 <script defer> 的区别。
 
-什么是渐进式渲染 (progressive rendering)？
++ 为什么通常推荐将 CSS <link> 放置在 <head></head> 之间，而将 JS <script> 放置在 </body> 之前？你知道有哪些例外吗？
 
-HTML 和 XHTML 有什么区别？
++ 什么是渐进式渲染 (progressive rendering)？
 
-HMTL5新标签
++ HTML 和 XHTML 有什么区别？
 
-CSS
-CSS 中类 (class) 和 ID 的区别
++ HMTL5新标签
 
-请问 "resetting" 和 "normalizing" CSS 之间的区别？你会如何选择，为什么？
+# CSS
++ CSS 中类 (class) 和 ID 的区别
 
-https://github.com/necolas/normalize.css
++ 请问 "resetting" 和 "normalizing" CSS 之间的区别？你会如何选择，为什么？
 
-https://github.com/shannonmoeller/reset-css/blob/master/reset.css
+        https://github.com/necolas/normalize.css
 
-请解释浮动 (Floats) 及其工作原理
+        https://github.com/shannonmoeller/reset-css/blob/master/reset.css
 
-这个非常重要，前面读的书上有这个，一定要完全搞懂。
++ 请解释浮动 (Floats) 及其工作原理
 
-清除浮动
+        这个非常重要，前面读的书上有这个，一定要完全搞懂。
 
-重要
+        清除浮动
 
-描述z-index和叠加上下文是如何形成的？
++ 重要
 
-重要，书上有，先理解。然后我推荐两个文章
+  + 描述z-index和叠加上下文是如何形成的？
 
-https://www.w3cplus.com/css/what-no-one-told-you-about-z-index.html
+        重要，书上有，先理解。然后我推荐两个文章
 
-http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/
+        https://www.w3cplus.com/css/what-no-one-told-you-about-z-index.html
 
-请描述 BFC(Block Formatting Context) 及其如何工作？
+        http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/
 
-理解BFC的特性及如何触发BFC
+  + 请描述 BFC(Block Formatting Context) 及其如何工作？
 
-CSS sprites
+  + 理解BFC的特性及如何触发BFC
 
-优点，缺点
+  + CSS sprites
 
-图片替换文字方案
+        优点，缺点
 
-你会如何解决特定浏览器的样式问题？
+        图片替换文字方案
 
-如何为有功能限制的浏览器提供网页？
+  + 你会如何解决特定浏览器的样式问题？
 
-渐进增强，优雅降级等等等等
+  + 如何为有功能限制的浏览器提供网页？
 
-有哪些的隐藏内容的方法？
+  + 渐进增强，优雅降级等等等等
+
+  + 有哪些的隐藏内容的方法？
+
 
 栅格系统 (grid system)
 
@@ -139,7 +142,10 @@ IIFE 立即执行函数
 
 null undefined区别
 
-闭包 与 作用域
++ 闭包 与 作用域
+
+      作用域就是一套规则，用于确定在何处以及如何查找变量（标识符）的规则
+      闭包能够让局部变量的值始终保持在内存中的原因
 
 非常重要，书上有！
 
