@@ -1,4 +1,4 @@
-#HTML
+# HTML
 + DOCTYPE（文档类型）的作用是什么？
 
       参考https://witcher42.github.io/2014/05/28/doctype/
